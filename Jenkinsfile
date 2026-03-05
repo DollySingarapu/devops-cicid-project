@@ -5,19 +5,19 @@ pipeline {
 
   stage('Clone') {
    steps {
-    git 'https://github.com/yourusername/devops-cicd-project.git'
+    git 'https://github.com/DollySingarapu/devops-cicd-project.git'
    }
   }
 
   stage('Build Docker Image') {
    steps {
-    sh 'docker build -t yourdockerhubusername/devops-app .'
+    sh 'docker build -t dollysingarapu/devops-app .'
    }
   }
 
   stage('Push Docker Image') {
    steps {
-    sh 'docker push yourdockerhubusername/devops-app'
+    sh 'docker push dollysingarapu/devops-app'
    }
   }
 
