@@ -5,6 +5,7 @@ pipeline {
 
   stage('Clone') {
    steps {
+    git branch: 'main',
     git 'https://github.com/DollySingarapu/devops-cicid-project.git'
    }
   }
