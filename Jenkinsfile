@@ -4,10 +4,10 @@ pipeline {
  stages {
 
   stage('Clone') {
-   steps {
-    
-    git 'https://github.com/DollySingarapu/devops-cicid-project.git'
-   }
+    steps {
+        git branch: 'main', url: 'https://github.com/DollySingarapu/devops-cicid-project.git'
+    }
+}
   }
 
   stage('Build Docker Image') {
